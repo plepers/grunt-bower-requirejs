@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 	var path = require('path');
 	var _ = grunt.util._;
 
-	grunt.registerMultiTask('bower', 'Wire-up Bower components in RJS config', function () {
+	grunt.registerMultiTask('bower_require', 'Wire-up Bower components in RJS config', function () {
 		var cb = this.async();
 		var excludes = this.options({exclude: []}).exclude;
 		var filePath = this.data.rjsConfig;
